@@ -1,0 +1,1 @@
+# TV100: A TV Series Dataset that Pre-Trained CLIP Has Not Seen

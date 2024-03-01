@@ -1,13 +1,157 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>简单静态网页</title>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="TV100: A TV Series Dataset that Pre-Trained CLIP Has Not Seen">
+  <meta name="keywords" content="TV100">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TV100</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+<!--   <link rel="icon" href="./static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
 </head>
 <body>
-    <h1>欢迎来到我的网页</h1>
-    <p>这是一个非常简单的静态网页，它包含了一些随机的文本。这个页面旨在展示基础的HTML结构，没有添加任何复杂的设计或功能。</p>
-    <p>随机文本一：Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <p>随机文本二：Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <p>随机文本三：Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">TV100: A TV Series Dataset that Pre-Trained CLIP Has Not Seen</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://www.lamda.nju.edu.cn/zhoudw/">Da-Wei Zhou</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.lamda.nju.edu.cn/qizh/">Zhi-Hong Qi</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.lamda.nju.edu.cn/yehj/">Han-Jia Ye</a><sup>1,2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.yuque.com/zhandc/home/nk8z4o">De-Chuan Zhan</a><sup>1,2</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>National Key Laboratory for Novel Software Technology, Nanjing University,</span>
+            <span class="author-block"><sup>2</sup> School of Artificial Intelligence, Nanjing University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+
+
+<section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3 "> Description</h2>
+          <div class="content has-text-justified">
+            <p>
+            Given CLIP’s training on the extensive LAION dataset, identifying datasets unknown to CLIP 
+              not only facilitates the application of transfer learning for downstream tasks but also serves as
+              a means to evaluate CLIP’s ability to detect out-of-distribution or novel instances. 
+              This is particularly relevant in the context of
+addressing the hallucination issues prevalent in large models. To advance research in this area, we introduce a
+dataset of TV series released post-2021, named <b>TV100</b>, to
+explore CLIP’s performance further.
+            </p>
+            <p>
+              Below are data collection process and detailed information about <b>TV100</b>, including the country distribution, class 
+              distribution, and an empirical
+evaluation of zero-shot and finetuned performance.
+            </p>
+            <image src="static/images/teaser.png" class="img-responsive" alt="scales">
+
+  </section>
+
+<section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3 "> Download </h2>
+          <div class="content has-text-justified">
+            <p>
+            The dataset is accessible at: <a
+              href="https://github.com/nerfies/nerfies.github.io">TV100</a>.
+            </p>
+
+  </section>
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            The template is borrowed from the <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
