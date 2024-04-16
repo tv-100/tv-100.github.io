@@ -127,6 +127,19 @@ evaluation of zero-shot and finetuned performance.
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
+          <h2 class="title is-3 "> Collection</h2>
+          <div class="content has-text-justified">
+            <p>
+              Here we elaborate on the data collection process. Specifically, we manually search for TV series from IMDB and collect the items released after 2021. Afterward, we download the related images on Google by searching the keyword “<b>[NAME] TV Series</b>,” where [NAME] is the name of the TV series. The downloaded images are then processed manually to delete repeated and meaningless ones. Hence, we can get a large dataset that contains around 800 classes. However, some classes may be seen for the CLIP, e.g., “The Snoopy Show” (Snoopy is a famous cartoon character). Hence, we use a pre-trained CLIP to rank the difficulty of these classes by measuring the zero-shot accuracy of each image and the text “a photo of the TV series [CLASS].” We choose the top-100 hard classes based on the zero-shot accuracy and construct the TV100 dataset. 
+            </p>
+
+  </section>
+
+              
+<section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
           <h2 class="title is-3 "> Download </h2>
           <div class="content has-text-justified">
             <p>
