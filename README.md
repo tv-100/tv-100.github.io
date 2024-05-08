@@ -15,7 +15,7 @@
 </div>
 
 ## Updates
-
+- [05/2024] TV100 is accepted to Frontiers of Computer Science.
 - [04/2024] Code and data released!
 
 
