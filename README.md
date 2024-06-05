@@ -32,7 +32,10 @@ If you find our dataset useful in your research, please use the following citati
 @article{zhou2024tv,
       title={TV100: A TV Series Dataset that Pre-Trained CLIP Has Not Seen},
       author={Zhou, Da-Wei and Qi, Zhi-Hong and Ye, Han-Jia and Zhan, De-Chuan},
-      journal={arXiv preprint arXiv:2404.12407},
-      year={2024}
+      journal={Frontiers of Computer Science},
+      year={2024},
+      volume = {18},
+      number = {5},
+      pages = {185349},
     }
 ```
